@@ -1,16 +1,14 @@
 #include <iostream>
-#include <vector>
-#include <bits/chrono.h>
 #include <cmath>
 #include <complex>
-using namespace std;
+
 
 void days2years(int &days, int &years) {
     if (days > 365) {
         years = days / 365;
         days -= years * 365;
-        cout << "Years:" << years << " Days:" << days << endl;
-    } else cout << "Years:" << years << " Days:" << days << endl;
+        std::cout << "Years:" << years << " Days:" << days << std::endl;
+    } else std::cout << "Years:" << years << " Days:" << days << std::endl;
 }
 
 double func(double *x, double *y) {
@@ -40,4 +38,11 @@ int presses(int *x) {
     }
     for (int i = 1; i <= length; i++) { count += i; }
     return (r - 1) * 10 + count;
+}
+
+int main() {
+    int hour = 777;
+    int min = 1;
+    cout << presses(&hour) << endl;
+    return 0;
 }
