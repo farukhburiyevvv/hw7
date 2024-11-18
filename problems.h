@@ -7,8 +7,7 @@ void days2years(int &days, int &years) {
     if (days > 365) {
         years = days / 365;
         days -= years * 365;
-        std::cout << "Years:" << years << " Days:" << days << std::endl;
-    } else std::cout << "Years:" << years << " Days:" << days << std::endl;
+        } 
 }
 
 double func(double *x, double *y) {
