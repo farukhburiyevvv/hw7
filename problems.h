@@ -36,10 +36,3 @@ int presses(int *x) {
     for (int i = 1; i <= length; i++) { count += i; }
     return (r - 1) * 10 + count;
 }
-
-int main() {
-    int hour = 777;
-    int min = 1;
-    cout << presses(&hour) << endl;
-    return 0;
-}
