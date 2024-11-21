@@ -4,11 +4,9 @@
 
 
 void days2years(int &days, int &years) {
-    if (days > 365) {
-        years = days / 365;
-        days -= years * 365;
-        } 
-}
+    years = days / 365;
+    days -= years * 365;
+        }
 
 double func(double *x, double *y) {
     double result = 11 * pow(*x, 3) / 3.0 + 5;
